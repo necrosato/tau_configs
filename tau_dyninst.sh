@@ -5,22 +5,29 @@
 # $ make install
 
 CPATH=$PWD
-TAUPATH=/home/naookiesato/Documents/tau_standalone/tau-2.27
-PDTPATH=/home/naookiesato/Documents/tau_standalone/pdtoolkit-3.25
-DYNINSTPATH=/home/naookiesato/Documents/tau_standalone/build-dyninst
-#DYNINSTPATH=/usr/local
+TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAUPATH=$TAU_STANDALONE_DIR/tau-2.27
+PDTPATH=$TAU_STANDALONE_DIR/pdtoolkit-3.25
+DYNINSTPATH=$TAU_STANDALONE_DIR/build-dyninst
+BOOSTPATH=$TAU_STANDALONE_DIR/boost_1_67_0
 
 export PATH=$PATH:$PDTPATH/x86_64/bin
 export PATH=$PATH:$TAUPATH/x86_64/bin
+#export DYNINST_ROOT=$DYNINSTPATH/dyninstAPI
+export DYNINST_ROOT=$DYNINSTPATH
+export DYNINSTAPI_RT_LIB=$DYNINSTPATH/lib/libdyninstAPI_RT.so
+export LD_LIBRARY_PATH=$TAUPATH/x86_64/lib:$DYNINSTPATH/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$DYNINSTPATH/libdwarf/lib:$LD_LIBRARY_PATH
 
 #go to the tau and pdt directory
-
-#example config with mpi and caf
 cd $TAUPATH
 #$TAUPATH/configure -pdt=$PDTPATH -bfd=download -unwind=download -dyninstinc=$DYNINSTPATH/include -dyninstlib=$DYNINSTPATH/lib
-$TAUPATH/configure -pdt=$PDTPATH -bfd=download -unwind=download -dyninst=$DYNINSTPATH
+#$TAUPATH/configure -pdt=$PDTPATH -bfd=download -unwind=download -dyninst=$DYNINSTPATH
+$TAUPATH/configure -pdt=$PDTPATH -bfd=download -unwind=download -dyninst=$DYNINSTPATH -boost=$BOOSTPATH -dwarf=$DYNINSTPATH/libdwarf
+#$TAUPATH/configure -pdt=$PDTPATH -bfd=download -unwind=download -dyninst=$DYNINSTPATH -boost=$BOOSTPATH -dwarf=$DYNINSTPATH/libdwarf -iowrapper -mpi
 make install -j4
 TAUMAKEFILE=Makefile.tau-pdt
+#TAUMAKEFILE=Makefile.tau-mpi-pdt
 export TAU_MAKEFILE=$TAUPATH/x86_64/lib/$TAUMAKEFILE
 
 cd $CPATH
