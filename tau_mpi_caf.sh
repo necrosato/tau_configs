@@ -5,8 +5,9 @@
 # $ make install
 
 CPATH=$PWD
-TAUPATH=/home/naookiesato/Documents/tau_standalone/tau-2.27
-PDTPATH=/home/naookiesato/Documents/tau_standalone/pdtoolkit-3.25
+TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAUPATH=$TAU_STANDALONE_DIR/tau-2.27
+PDTPATH=$TAU_STANDALONE_DIR/pdtoolkit-3.25
 
 export PATH=$PATH:$PDTPATH/x86_64/bin
 export PATH=$PATH:$TAUPATH/x86_64/bin

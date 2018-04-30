@@ -5,11 +5,11 @@ TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
 BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_67_0
 
 #BUILD DYNINST
-DYNINSTTGZ=/home/naookiesato/Downloads/dyninst-9.3.2.tar.gz
-DYNINSTSRCDIR=$TAU_STANDALONE_DIR/dyninst-9.3.2
+DYNINSTTGZ=/home/naookiesato/Downloads/DyninstAPI-8.2.1.tgz
+DYNINSTSRCDIR=$TAU_STANDALONE_DIR/Dyninst-8.2.1
 DYNINSTBUILDDIR=$TAU_STANDALONE_DIR/build-dyninst
-#DYNINSTTGZ=/home/naookiesato/Downloads/DyninstAPI-9.0.3.tgz
-#DYNINSTSRCDIR=$TAU_STANDALONE_DIR/DyninstAPI-9.0.3
+
+
 
 cd $TAU_STANDALONE_DIR
 
