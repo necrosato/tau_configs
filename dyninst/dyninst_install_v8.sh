@@ -2,7 +2,8 @@
 CPATH=$PWD
 
 TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
-BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_67_0
+#BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_67_0
+BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_61_0
 
 #BUILD DYNINST
 DYNINSTTGZ=/home/naookiesato/Downloads/DyninstAPI-8.2.1.tgz
