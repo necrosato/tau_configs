@@ -2,8 +2,8 @@ CPATH=$PWD
 
 TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
 
-BOOSTTGZ=/home/naookiesato/Downloads/boost_1_67_0.tar.gz
-BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_67_0
+BOOSTTGZ=/home/naookiesato/Downloads/boost_1_61_0.tar.gz
+BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_61_0
 
 cd $TAU_STANDALONE_DIR
 
