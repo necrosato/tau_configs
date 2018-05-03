@@ -5,7 +5,7 @@
 # $ make install
 
 CPATH=$PWD
-TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAU_STANDALONE_DIR=$HOME/Documents/tau_standalone
 TAUPATH=$TAU_STANDALONE_DIR/tau-2.27
 PDTPATH=$TAU_STANDALONE_DIR/pdtoolkit-3.25
 

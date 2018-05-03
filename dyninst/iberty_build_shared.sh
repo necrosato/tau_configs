@@ -1,12 +1,12 @@
 CPATH=$PWD
 
-TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAU_STANDALONE_DIR=$HOME/Documents/tau_standalone
 
 #BUILD SHARED libiberty (libiberty.so)
 GCCGIT=https://github.com/gcc-mirror/gcc.git
 GCCSRCDIR=$TAU_STANDALONE_DIR/gcc
 IBERTYSRCDIR=$GCCSRCDIR/libiberty
-IBERTYPATH=/home/naookiesato/Downloads/libiberty.so
+IBERTYPATH=$HOME/Downloads/libiberty.so
 cd $TAU_STANDALONE_DIR
 rm -rf $GCCSRCDIR
 git clone $GCCGIT

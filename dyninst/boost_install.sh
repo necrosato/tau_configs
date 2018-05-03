@@ -1,6 +1,6 @@
 CPATH=$PWD
 
-TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAU_STANDALONE_DIR=$HOME/Documents/tau_standalone
 #TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone/tau-2.27/x86_64
 
 BOOSTLINK=https://sourceforge.net/projects/boost/files/boost/1.67.0/boost_1_67_0.tar.gz

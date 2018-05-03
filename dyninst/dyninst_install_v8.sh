@@ -1,7 +1,7 @@
 #Make sure you run # apt-get install libiberty-dev libelf-dev first
 CPATH=$PWD
 
-TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAU_STANDALONE_DIR=$HOME/Documents/tau_standalone
 #BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_67_0
 BOOSTDIR=$TAU_STANDALONE_DIR/boost_1_61_0
 

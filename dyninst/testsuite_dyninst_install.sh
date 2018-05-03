@@ -1,6 +1,6 @@
 CPATH=$PWD
 
-TAU_STANDALONE_DIR=/home/naookiesato/Documents/tau_standalone
+TAU_STANDALONE_DIR=$HOME/Documents/tau_standalone
 
 #BUILD DYNINST TESTSUITE
 TESTSUITEDIR=$TAU_STANDALONE_DIR/testsuite
